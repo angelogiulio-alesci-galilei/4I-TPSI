@@ -1,0 +1,106 @@
+PICCOLI SUGGERIMENTI
+--------------------
+Se apri, chiudi subito, poi scrivi dentro. Es. <tr></tr>
+Modifica rapida proprietà/valori: doppio clic.
+Se è troppo difficile o troppo lungo, dividi il lavoro in parti più piccole.
+Lasciati una traccia di ciò che non sei riuscito a fare usando i commenti.
+Commenta dove serve, non dove è ovvio.
+TAG, ATTRIBUTI, PROPRIETA', VALORI
+<tag attributo="p1:v1; p2:v2;">innerHTML</tag>
+
+STRATEGIA DI APPRENDIMENTO
+--------------------------
+Le prime volte scrivi, non fare copia-incolla: così ti entra in testa.
+Le prime volte non usare l'autocompletamento: ignoralo e finisci di digitare con la tua testa.
+Se ti distrae in questo momento: ESC.
+
+Fatti un dizionario tuo, con eventuali esempi di utilizzo a seconda della complessità.
+Per sezioni lunghe di codice (es. struttura di html, che è sempre uguale): crea modelli di codice pronti al copia-incolla. Non riutilizzare esercizi vecchi, perché devi prima togliere quello che non serve (lasciando spesso dei refusi) e poi aggiungere. Meglio modelli di codice! (Però le tabelle imparale a memoria facendole tante volte!).
+
+Non far scrivere il codice ad intelligenze artificiali.
+Cerca singoli elementi su Internet (es. tag, attributi, proprietà:valori) e copiateli sul tuo dizionario.
+I forum possono essere dispersivi, i siti didattici (es. W3School) e le documentazioni possono essere troppo approfonditi: puoi chiedere un singolo elemento ad un'intelligenza artificiale e copiarlo sul tuo dizionario.
+
+Quando non hai più bisogno del dizionario, usa l'autocompletamento con TAB.
+Al crescere della complessità, crea dei modelli di codice pronti al copia-incolla, perché ora lo sai fare ragionato.
+L'obiettivo è usare solo il codice strettamente necessario per lo scopo attuale o eventualmente per miglioramenti futuri.
+Con Bootstrap: sono copia-incolla ragionati.
+
+ERRORI COMUNI
+-------------
+Controlla la presenza dei ; alla fine di ogni coppia proprietà:valore;
+400px, non 400 px -> Senza spazio!
+
+MODALITA' DI LAVORO
+-------------------
+Prima crea i paragrafi normali, poi aggiungi lo stile
+I paragrafi sono l'esercizio che richiede più tempo
+Testa la formattazione un po' alla volta, non tutta insieme
+Per piccole correzioni ed esperimenti in tempo reale, prova l'Ispeziona di Google Chrome (attenzione: NON SALVA!)
+Ci sono elementi di stile visibili ma non esplicitamente indicati: vanno messi!
+Capisci quando è richiesto mandare a capo forzatamente
+
+LETTERE ACCENTATE
+-----------------
+Si usano le entità
+Per semplicità usiamo solo &*grave
+Esempio: è -> &egrave
+
+FORMATTAZIONE DEL PARAGRAFO
+---------------------------
+proprietà-lato, esempi:
+padding-top
+margin-left
+
+border-style:
+I più comuni sono solid (linea continua), dashed (tratteggiata), dotted (puntini)
+
+FORMATTAZIONE DEL TESTO
+-----------------------
+Non usare tag <b> <i> <u>: è un esercizio sull'attributo style, propedeutico a CSS
+
+color:red (non text-color) -> Colore del testo
+font-style: -> normal / italic
+font-weight: -> normal / bold
+font-size:14px; -> Dimensioni del testo
+font-family:Arial; -> Font
+text-decoration:underline; -> Sottolineato
+
+ELENCO NUMERATO
+---------------
+Ci sono attributi apposta per lettere maiuscole e minuscole, ma noi usiamo style.
+list-style-type:lower-alpha;
+list-style-type:upper-alpha;
+
+TABELLE MOLTO SEMPLICI
+----------------------
+Se non abbiamo molte altre informazioni (es. CSS inline), è possibile creare una tabella che "somigli" a quella reale:
+<tr>
+   <td></td><td></td>
+</tr>
+
+O addirittura:
+<tr> <td></td> <td></td> </tr>
+
+Ma quasi sempre è meglio fare un td diverso su ogni riga.
+Quindi le prime volte possiamo avere difficoltà perché stiamo scrivendo nuove righe verso il basso che in realtà rappresentano nuove celle verso destra.
+
+TABELLE DISOMOGENEE
+------------------
+Con molte celle unite in maniera disomogenea, costruire la tabella manualmente da sinistra verso destra e dall'alto verso il basso.
+
+TABELLE OMOGENEE
+----------------
+Ratio:
+1) Fai una sola cella completa
+2) Fai copia-incolla per la prima riga completa
+3) Fai copia-incolla per le altre righe
+4) Modifica manualmente (clic veloci col mouse)
+
+1) <table></table>
+2) <tr></tr>
+3) <td></td> con stile e contenuti più completi possibili, in modo da fare copia-incolla veloce poi
+
+CENTRARE UN ELEMENTO (ES. UNA TABELLA)
+--------------------------------------
+margin:auto;

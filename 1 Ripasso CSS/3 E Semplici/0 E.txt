@@ -1,0 +1,31 @@
+INIZIO
+------
+Crea una cartella chiamata 3_cognome
+Al suo interno crea 3 cartelle chiamate es1_inline, es2_interno_id, es3_esterno_class
+
+es1_inline
+----------
+Crea il file 1_index.html
+Intestazione h1 "Questa particolare intestazione è in rosso con CSS inline (attributo Style)"
+Paragrafo p "Questo particolare paragrafo è in blu con CSS inline (attributo Style)."
+
+es2_interno
+-----------
+Crea il file 1_index.html
+Intestazione h1 "Tutte le intestazioni h1 sono in rosso con CSS interno (o incorporato) (tag Style nell'Head)"
+Paragrafo p "Questo particolare paragrafo con id "par" è in blu con CSS interno (o incorporato) (tag Style nell'Head).
+
+Modifica quindi opportunamente il CSS in accordo con quanto indicato nell'intestazione e nel paragrafo.
+
+es3_esterno
+-----------
+Crea il file 1_index.html
+Crea il file 2_style.css
+Intestazione h1 "Questa intestazione con classe "es3" è in verde con CSS esterno (file separato .css)"
+Paragrafo p "Questo paragrafo con classe "es3" (la stessa dell'intestazione) è in verde con CSS esterno (file separato .css)."
+
+Modifica quindi opportunamente il CSS in accordo con quanto indicato nell'intestazione e nel paragrafo.
+
+CONSEGNA
+--------
+Fai uno zip della cartella 3_cognome chiamato 3_cognome.zip e consegna.

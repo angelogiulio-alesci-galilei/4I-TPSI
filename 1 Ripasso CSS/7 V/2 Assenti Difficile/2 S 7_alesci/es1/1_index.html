@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>06_alesci_1</title>
+		<style>
+			table, td {
+				border-style:solid;
+				border-color:black;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label for="nome">Nome:</label>
+					</td>
+					<td>
+						<input type="text" id="nome" name="nome" placeholder="nome">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="cognome">Cognome:</label>
+					</td>
+					<td>
+						<input type="text" id="cognome" name="cognome" value="cognome">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="password">Password:</label>
+					</td>
+					<td>
+						<input type="password" id="password" name="password">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Patente:
+					</td>
+					<td>
+						<input type="radio" id="pat1Motore" name="pat1" value="motore">Veicoli a motore<br/>
+						<input type="radio" id="pat1Imbarcazioni" name="pat1" value="imbarcazioni">Imbarcazioni<br/>
+						<input type="radio" id="pat1Altro" name="pat1" value="altro">Altro<br/>
+						<label for="pat1Specificare">Specificare</label>
+						<input type="text" id="pat1Specificare" name="pat1Specificare">
+					</td>
+				</tr>
+				<tr>
+					<td>Patente:</td>
+					<td>
+						<input type="checkbox" id="pat2A" name="pat2" value="A">Patente A<br/>
+						<input type="checkbox" id="pat2B" name="pat2" value="B">Patente B<br/>
+						<input type="checkbox" id="pat2C" name="pat2" value="C">Patente C<br/>
+						<input type="checkbox" id="pat2D" name="pat2" value="D">Patente D<br/>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="data">Conseguita il:</label>
+					</td>
+					<td>
+						<input type="date" id="data" name="data">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="dove">A:</label>
+					</td>
+					<td>
+						<select id="dove" name="dove">
+							<option value="Mantova">Mantova</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="carica">Carica la scansione (file):</label>
+					</td>
+					<td>
+						<input type="file" id="carica" name="carica">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" id="invia" name="invia">
+						<input type="reset" id="reset" name="reset">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

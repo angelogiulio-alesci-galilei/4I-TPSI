@@ -1,0 +1,7 @@
+ORDINE NEL CODICE CSS
+---------------------
+In questo caso può essere utile seguire l'ordine seguito dagli esercizi precedenti, che quindi rifletteva l'ordine della pagina web.
+
+Tuttavia, più in generale:
+- Dal generico (selettore) allo specifico (class, id)
+- Dal tag più esterno (es. table) a quello più interno (es. td)

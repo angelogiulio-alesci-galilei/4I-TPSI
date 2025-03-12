@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			.bordoNero {
+				border-color:black; border-style:solid;
+			}
+			.Largo {
+				width:150px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table class="bordoNero">
+				<tr>
+					<td class="bordoNero Largo">
+						<label for="Nome">Nome:</label>
+					</td>
+					<td class="bordoNero" style="width:300px;">
+						<input type="text" id="Nome" name="Nome" placeholder="nome" class="Largo">
+					</td>
+				<tr>
+					<td class="bordoNero">
+						<label for="Cognome">Cognome:</label>
+					</td>
+					<td class="bordoNero">
+						<input type="text" id="Cognome" name="Cognome" value="cognome" class="Largo">
+					</td>
+				</tr>
+				<tr>
+					<td class="bordoNero">
+						<label for="Password">Password:</label>
+					</td>
+					<td class="bordoNero">
+						<input type="password" id="Password" name="Password" class="Largo">
+					</td>
+				</tr>
+				<tr>
+					<td class="bordoNero">
+						<label for="Patente1">Patente:</label>
+					</td>
+					<td class="bordoNero">
+						<input type="radio" id="Motore" name="Patente1" value="veicoliAMotore">Veicoli a motore<br/>
+						<input type="radio" id="Imbarcazioni" name="Patente1" value="Imbarcazioni">Imbarcazioni<br/>
+						<input type="radio" id="Altro" name="Patente1" value="Altro">Altro<br/>
+						<label for="Specificare">Specificare </label>
+						<input type="text" id="Specificare" name="Specificare" class="Largo">
+					</td>
+				</tr>
+				<tr>
+					<td class="bordoNero">
+						<label for="Patente2">Patente:</label>
+					</td>
+					<td class="bordoNero">
+						<input type="checkbox" id="pA" name="Patente2" value="A">Patente A<br/>
+						<input type="checkbox" id="pB" name="Patente2" value="B">Patente B<br/>
+						<input type="checkbox" id="pC" name="Patente2" value="C">Patente C<br/>
+						<input type="checkbox" id="pD" name="Patente2" value="D">Patente D<br/>
+					</td>
+				</tr>
+				<tr>
+					<td class="bordoNero">
+						<label for="Data">Conseguita il:</label>
+					</td>
+					<td class="bordoNero">
+						<input type="date" id="Data" name="Data">
+					</td>
+				</tr>
+				<tr>
+					<td class="bordoNero">
+						<label for="Dove">A:</label>
+					</td>
+					<td class="bordoNero">
+						<input type="list <!-- Da qui-->
+					</td>
+				</tr>
+				<tr>
+					<td class="bordoNero">
+					</td>
+					<td class="bordoNero">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" id="Submit" name="Submit">
+						<input type="reset" id="Reset" name="Reset">
+					</td>
+				</tr>
+		</form>
+	</body>
+</html>

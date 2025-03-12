@@ -1,0 +1,5 @@
+Crea una cartella chiamata 6_cognome.
+Copia al suo interno il file 1_index.html dell'esercizio precedente.
+
+Modifica la pagina web dell'esercizio precedente usando un foglio di stile esterno e l'attributo class.
+Il file CSS deve chiamarsi 2_style.css

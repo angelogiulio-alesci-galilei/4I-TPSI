@@ -1,0 +1,9 @@
+Ci accorgiamo che gli unici id che ha senso mettere ai fini del foglio di stile sono: paragrafo 1, paragrafo 2, paragrafo 3, elenco numerato 2.
+
+Perché sono molto lunghi e perché sono univoci.
+
+Non ha senso mettere gli id e spostare la formattazione degli altri elementi, es. td, perché sono tutti diversi in qualcosa.
+Non ha senso nemmeno usare il selettore td per lo stesso motivo.
+
+Notiamo però che gran parte della formattazione è simile a gruppi.
+Ci viene quindi in aiuto l'attributo class, per la prossima consegna.

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>4_alesci.html</title>
+		<style type="text/css">
+			#par1 {
+				width:400px;
+				text-align:right;
+				background-color:lightgreen;
+				margin-left:20px;
+				padding:10px;
+				border-color:red;
+				border-style:dashed;
+			}
+			
+			#par2 {
+				width:400px;
+				text-align:center;
+				background-color:lightblue;
+				font-weight:bold;
+				margin-left:40px;
+				padding-top:30px;
+			}
+			
+			#par3 {
+				width:400px;
+				background-color:blue;
+				color:white;
+				text-decoration:underline;
+				text-align:right;
+				margin-left:60px;
+				padding:10px;
+				font-family:Comic Sans MS;
+				font-size:30px;
+				font-style:italic;
+			}
+			
+			#ol2 {
+				background-color:lightyellow;
+				border-color:red;
+				border-style:dotted;
+				// usa le lettere invece dei numeri;
+				list-style-type:upper-alpha;
+				font-size:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Paragrafo 1</h2>
+		<p id="par1">
+				  Questo paragrafo &egrave largo 400px,<br/>
+				  il testo &egrave allineato a destra,<br/>
+				  ha colore "lightgreen",<br/>
+				  ed ha un margine sinistro di 20 px, un padding di 10px ed un bordo...
+		</p>
+		
+		<h2>Paragrafo 2</h2>
+		<p id="par2">
+				  Questo paragrafo ha<br/>
+				  il testo allineato al centro,<br/>
+				  ha colore "lightblue",<br/>
+				  testo in grassetto e margine sinistro di 40px e un padding alto di 30 px...
+		</p>
+		
+		<h2>Paragrafo 3</h2>
+		<p id="par3">
+		   Questo paragrafo ha<br/>
+		   il testo allineato a destra<br/>
+		   Ha un margine sinistro di<br/>
+		   30px<br/>
+		   Un padding di 10px<br/>
+		   e il testo &egrave in "Comic Sans<br/>
+		   MS" di dimensione 30 pixel<br/>
+		   e corsivo
+		  </p>
+		
+		<h2>Elenco 1</h2>
+		<ol>
+			<li style="background-color:pink; padding:10px;">Questa voce ha sfondo "pink"</li>
+			<li style="background-color:lightblue; padding:10px;">Questa voce ha sfondo "lightblue"</li>
+		</ol>
+		
+		<h2>Elenco 2</h2>
+		<ol id="ol2">
+			<li style="color:red;">Questo elenco utilizza le lettere invece dei numeri</li>
+			<li style="color:green;">La dimensione del font &egrave di 10 pixel</li>
+			<li style="color:blue;">Ed è presente un bordo</li>
+		</ol>
+		
+		<h2>Tabella 1)</h2>
+		<table style="margin:auto;">
+			<tr>
+				<td style="padding:10px; background-color:#CC3300; color:white;">#CC3300</td>
+				<td style="padding:10px; background-color:#CC6600; color:white;">#CC6600</td>
+				<td style="padding:10px; background-color:#CC9900; color:white;">#CC9900</td>
+			</tr>
+			<tr>
+				<td style="padding:10px; background-color:#CC3399; color:white;">#CC3399</td>
+				<td style="padding:10px; background-color:#CC6699; color:white;">#CC6699</td>
+				<td style="padding:10px; background-color:#CC9999; color:white;">#CC9999</td>
+			</tr>
+		</table>
+		
+		<h2>Tabella 2)</h2>
+		<table style="margin:auto;">
+			<tr>
+				<td style="width:100px; background-color:lightyellow; border-color:black; border-style:solid;">Allineato a sinistra</td>
+				<td style="width:100px; background-color:lightyellow; border-color:blue; border-style:solid; text-align:center;"> Allineato al centro</td>
+				<td style="width:100px; background-color:lightyellow; border-color:red; border-style:solid; text-align:right;">Allineato a destra</td>
+			</tr>
+		</table>
+		
+		<h2>Tabella 1)</h2>
+		<table style="border-color:black; border-style:solid; margin:auto; text-align:center;">
+			<tr>
+				<td colspan="2" rowspan="2" style="border-color:black; border-style:solid; width:100px; background-color:yellow;">a b<br/>e f</td>
+				<td style="border-color:black; border-style:solid;">c</td>
+				<td style="border-color:black; border-style:solid;">d</td>
+			</tr>
+			<tr>
+				<td colspan="2" rowspan="2" style="border-color:black; border-style:solid; width:100px; background-color:pink;">g h<br/>k j</td>
+			</tr>
+			<tr>
+				<td style="border-color:black; border-style:solid;">i</td>
+				<td style="border-color:black; border-style:solid;">j</td>
+			</tr>
+		</table>
+		
+		<h2>Tabella 2)</h2>
+		<table style="border-color:black; border-style:solid; text-align:right; margin:auto; font-weight:bold; font-size:30px;">
+			<tr>
+				<td colspan="2" style="border-color:black; border-style:solid; width:120px; color:green;;">a b</td>
+				<td style="border-color:black; border-style:solid; width:80px; color:blue;">c d</td>
+			</tr>
+			<tr>
+				<td style="border-color:black; border-style:solid;">e</td>
+				<td style="border-color:black; border-style:solid; color:red;">f g</td>
+				<td style="border-color:black; border-style:solid;">h </td>
+			</tr>
+		</table>
+		
+	</body>
+</html>

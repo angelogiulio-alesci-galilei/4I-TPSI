@@ -1,0 +1,62 @@
+.par1 {
+	width:400px;
+	text-align:right;
+	background-color:lightgreen;
+	margin-left:20px;
+	padding:10px;
+	border-color:red;
+	border-style:dashed;
+}
+
+.par2 {
+	width:400px;
+	text-align:center;
+	background-color:lightblue;
+	font-weight:bold;
+	margin-left:40px;
+	padding-top:30px;
+}
+
+.par3 {
+	width:400px;
+	background-color:blue;
+	color:white;
+	text-decoration:underline;
+	text-align:right;
+	margin-left:60px;
+	padding:10px;
+	font-family:Comic Sans MS;
+	font-size:30px;
+	font-style:italic;
+}
+
+.ol2 {
+	background-color:lightyellow;
+	border-color:red;
+	border-style:dotted;
+	// usa le lettere invece dei numeri;
+	list-style-type:upper-alpha;
+	font-size:20px;
+}
+
+.tab1 {
+	padding:10px;
+	color:white;
+}
+
+.tab2 {
+	width:100px;
+	background-color:lightyellow;
+	border-style:solid;
+}
+
+.tab34 {
+	border-color:black;
+	border-style:solid;
+	margin:auto;
+}
+
+.td34 {
+	border-color:black;
+	border-style:solid;
+}

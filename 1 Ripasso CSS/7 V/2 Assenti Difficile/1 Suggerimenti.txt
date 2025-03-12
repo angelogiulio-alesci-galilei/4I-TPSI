@@ -1,0 +1,23 @@
+Esercizio 1
+-----------
+IMPOSTAZIONE INIZIALE: 10 minuti
+1) Impostazione di form e tabella
+2) Un solo input text con label
+3) Copia incolla: input tutti text
+
+AZIONI SUCCESSIVE:
+1) Cambio tipologia (tutti tranne select)
+2) Aggiunta placeholder / value ai text
+
+RADIO/CHECKBOX:
+1) Togli label
+   label è sugli id, mentre radio e checkbox sono legati insieme da name
+2) Aggiungi value
+3) Metti <br/>
+4) Copia incolla
+
+SELECT
+1) Option -> value e innerHTML
+2) Copia incolla
+
+Esercizio 2: 10 minuti

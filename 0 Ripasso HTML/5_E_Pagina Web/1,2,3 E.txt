@@ -1,0 +1,30 @@
+Crea una semplice pagina web su un tema a piacere che contenga tutti e soli i tag importanti presenti nelle dispense.
+Consegna come 05_COGNOME_titoloDelSito.html
+
+In particolare, oltre alla normale struttura di un file html, usare:
+- Div
+- Titolo
+- Paragrafo
+- Grassetto, corsivo, sottolineato
+- Invio a capo
+- Titoli (headers)
+- Commento
+- Tabella con almeno due celle unite
+- Elenco puntato
+- Elenco numerato
+- Almeno un'immagine (URL dal Web)
+- Sfondo del body
+
+Modifica almeno una volta lo stile in linea cambiando:
+- Colore del testo
+- Colore dello sfondo
+- Allineamento del testo
+- Dimensione del testo
+
+Aggiungi un Form di richiesta dati che chieda almeno:
+- Un testo
+- Una password
+- Una data
+- Un campo radio button e/o un campo checkbox e/o un menù a tendina
+- Il submit
+Non dimenticare gli attributi id e name

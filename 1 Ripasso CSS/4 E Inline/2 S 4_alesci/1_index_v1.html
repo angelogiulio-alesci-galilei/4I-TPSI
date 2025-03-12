@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>3_alesci_foglioStileInline</title>
+	</head>
+	<body>
+		<p>Paragrafo 1)</p>
+		<p style="width:400px;
+				  text-align:right;
+				  background-color:lightgreen;
+				  margin-left:20px;
+				  padding:10px;
+				  border-color:red;
+				  border-style:dashed;">Questo paragrafo e' largo 400 px,<br/>
+									   il testo e' allineato a destra,<br/>
+									   ha colore "lightgreen",<br/>
+									   ed ha un margine sinistro di 20 px, un padding di 10 px ed un bordo...</p>
+	
+		<p>Paragrafo 2)</p>
+		<p style="width:400px;
+				  text-align:center;
+				  background-color:lightblue;
+				  font-weight:bold;
+				  padding:10px;
+				  margin-left:20px;
+				  padding-top:30px;">Questo paragrafo ha<br/>
+									 il testo allineato al centro,<br/>
+									 ha colore "lightblue",<br/>
+									 testo in grassetto e margine sinistro di 40px e un padding alto di 30px ...</p>
+		
+		<p>Paragrafo 3)</p>
+		<p style="width:400px;
+				  background-color:blue;
+				  color:white;
+				  text-align:right;
+				  margin-left:30px;
+				  padding:10px;
+				  font-family:Comic Sans MS;
+				  font-size:30px;
+				  font-style:italic;
+				  text-decoration:underline;">Questo paragrafo ha il testo allineato a destra<br/>
+											  Ha un margine sinistro di 30px<br/>
+											  Un padding di 10px</br>
+											  e il testo e' in "Comic Sans MS" di dimensione 30 pixel e corsivo</p>
+		
+		<p>Elenco 1)</p>
+		<ol>
+			<li style="background-color:pink; padding:10px;">Questa voce ha sfondo "pink"</li>
+			<li style="background-color:lightblue; padding:10px;">Questa voce ha sfondo "lightblue"</li>
+		</ol>
+		
+		<p>Elenco 2)</p>
+		<ol style="list-style-type:upper-alpha;
+				   background-color:lightyellow;
+				   border-style:dashed;
+				   border-color:red;
+				   font-size:20px;">
+									<li style="color:red">Questo elenco usa le lettere invece dei numeri</li>
+									<li style="color:green">La dimensione del font &egrave di 20 pixel</li>
+									<li style="color:blue">Ed &egrave presente un bordo</li>
+		</ol>
+		
+		<p style="padding-left:40px;">In questo testo alcune parti sono <span style="font-weight:bold; color:red;">evidenziate in rosso grassetto</span><br/>
+		   mentre altre parti sono <span style="font-style:italic; color:blue;">evidenziate in blu corsivo</span><br/>
+		   e altre ancora sono <span style="color:green; background-color:yellow; font-size:30px;">verdi su sfondo giallo</span>.<br/>
+		</p>
+		
+		<div style="text-align:center;">
+			<p style="font-weight:bold; font-size:30px;">Tabella 1)</p>
+			<table style="margin-left:auto;margin-right:auto; color:white;">
+				<tr>
+					<td style="background-color:#CC3300; padding:10px;">#CC3300</td>
+					<td style="background-color:#CC6600; padding:10px;">#CC6600</td>
+					<td style="background-color:#CC9900; padding:10px;">#CC9900</td>
+				</tr>
+				<tr>
+					<td style="background-color:#CC3399; padding:10px;">#CC3399</td>
+					<td style="background-color:#CC6699; padding:10px;">#CC6699</td>
+					<td style="background-color:#CC9999; padding:10px;">#CC9999</td></tr>
+			</table>
+			
+			<p style="font-weight:bold; font-size:30px;">Tabella 2)</p>
+			<table style="margin-left:auto;margin-right:auto; width:250px">
+				<tr>
+					<td style="text-align:left; background-color:lightyellow; border-style:solid; border-color:black;">Allineato a sinistra</td>
+					<td style="text-align:center; background-color:lightyellow; border-style:solid; border-color:blue;">Allineato al centro</td>
+					<td style="text-align:right; background-color:lightyellow; border-style:solid; border-color:red;">Allineato a destra</td>
+				</tr>
+			</table>
+			
+			<p>Tabella 1)</p>
+			<table border="1" style="margin-left:auto; margin-right:auto;">
+				<tr>
+					<td colspan="2" rowspan="2" style="padding-left:30px; padding-right:30px; background-color:yellow;">a b<br/>e f</td>
+					<td>c</td>
+					<td>d</td>
+				</tr>
+				<tr>
+					<td colspan="2" rowspan="2" style="padding-left:30px; padding-right:30px; background-color:pink;">g h<br/>k l</td>
+				</tr>
+				<tr>
+					<td>i</td>
+					<td>j</td>
+				</tr>
+			</table>
+			
+			<p>Tabella 2)</p>
+			<table border="1" style="margin-left:auto; margin-right:auto; font-size:30px; font-weight:bold;">
+				<tr>
+					<td colspan="2" style="padding-left:40px; color:green;">a b</td>
+					<td style="padding-left:30px; color:blue;">c d</td>
+				</tr>
+				<tr>
+					<td style="padding-left:10px;">e</td>
+					<td style="padding-left:20px; color:red;">f g</td>
+					<td style="text-align:right;">h</td> 
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

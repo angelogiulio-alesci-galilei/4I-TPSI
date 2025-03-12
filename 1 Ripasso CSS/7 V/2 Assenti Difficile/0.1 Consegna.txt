@@ -1,0 +1,4 @@
+La consegna deve essere un unico file 7_cognome.zip
+Deve contenere una cartella per ogni esercizio chiamata es1, es2, ...
+Nelle cartelle i file html devono chiamarsi 1_index.html
+Se presenti, i file css devono chiamarsi 2_style.css

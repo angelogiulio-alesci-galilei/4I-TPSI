@@ -1,0 +1,6 @@
+Esercizio 1: 15 minuti
+-----------
+Nel CSS della table, non dei td: border-collapse:collapse;
+CSS interno, poi esterno con copia incolla (le prime volte)
+
+Esercizio 2: 15 minuti

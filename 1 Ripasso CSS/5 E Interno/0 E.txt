@@ -1,0 +1,4 @@
+Crea una cartella chiamata 5_cognome.
+Al suo interno copia la pagina web 1_index.html dell'esercizio precedente.
+Modificala usando un foglio di stile interno e consegna come 5_cognome.zip
+Usa i tag id, NON i tag class, saggiamente!

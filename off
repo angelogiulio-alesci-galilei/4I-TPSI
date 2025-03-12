@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Il CodeSpace sarà spento. La pagina Web se ne accorgerà tra circa 1 minuto, ma puoi già chiudere la scheda del browser."
+gh codespace stop -c fuzzy-spoon-7vpvjg4xr6q5hx4rr

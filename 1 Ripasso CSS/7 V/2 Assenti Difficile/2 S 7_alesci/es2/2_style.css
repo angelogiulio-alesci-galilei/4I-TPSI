@@ -1,0 +1,32 @@
+div {
+	background-color:lightyellow;
+	width:500px;
+	margin:auto;
+}
+
+h1 {
+	text-align:center;
+}
+
+.riga {
+	text-align:right;
+	background-color:orange;
+	border-style: solid;
+	border-color: orange;
+	border-radius: 5px;
+	color:white;
+	font-weight:bold;
+	padding:3px;
+	margin-top:0px;
+	margin-bottom:3px;
+}
+
+#r1 {width:10%;}
+#r2 {width:20%;}
+#r3 {width:30%;}
+#r4 {width:40%;}
+#r5 {width:50%;}
+#r6 {width:60%;}
+#r7 {width:70%;}
+#r8 {width:80%;}
+#r9 {width:90%;}
