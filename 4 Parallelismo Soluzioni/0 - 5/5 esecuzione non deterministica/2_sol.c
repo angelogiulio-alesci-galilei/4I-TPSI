@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-//	Le parti commentate non si possono fare perché i case dello switch devono essere costanti, non possono essere variabili
+//	Le parti commentate non si possono fare perche' i case dello switch devono essere costanti, non possono essere variabili
 
 int main () {
 	int pid;
@@ -21,8 +21,8 @@ int main () {
 			pid = 2;
 			//pid = pid2 = getpid();
 		else
-			//pid = pidMain = getpid();
 			pid = 0;
+			//pid = pidMain = getpid();
 	}
 
 	switch (pid) {
