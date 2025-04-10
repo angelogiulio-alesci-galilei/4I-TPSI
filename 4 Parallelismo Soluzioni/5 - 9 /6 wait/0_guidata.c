@@ -11,7 +11,7 @@ int main () {
     int pid = fork();           // creazione del figlio
     if (pid == 0) {             // e' il figlio
         printf("F> Sono il figlio, il mio pid e': %d; ",getpid());
-        printf("il mio papi ha pid: %d\n",getpid());
+        printf("il mio papi ha pid: %d\n",getppid());
         printf("F> Ho finito il lavoro!\n");
         exit(0);
     }
