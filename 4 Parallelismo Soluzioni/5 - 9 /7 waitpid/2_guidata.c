@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <time.h>
 
 int scriviLeggi (char *f1);
 
@@ -19,42 +18,56 @@ int main () {
 }
 
 int scriviLeggi (char *f1) {
-  int status, pid;
+  int status, pid, i;
   FILE *fp;
   char parola[80];
 
-  // creo processo figlio  
-  if ((pid = fork()) < 0) {
-    perror("fork");
-    exit(1);
-  }
-  
-  if (pid == 0) {                 // codice eseguito dal FIGLIO 
-    printf("Digita la stringa che il figlio leggera' e scrivera' nel file: "); 
-    scanf("%s", parola);
-    
-    if ((fp = fopen(f1, "w")) < 0) {
-      perror("open"); 
+  for (i = 0; i < 3; i++) { // ciclo per creare 3 figli
+    if ((pid = fork()) < 0) {
+      perror("fork");
       exit(1); 
     }
+    
+    if (pid == 0) { // codice eseguito dai FIGLI
+      printf("Figlio %d: Digita la stringa da scrivere nel file: ", i + 1); 
+      scanf("%s", parola);
+      
+      if ((fp = fopen(f1, (i == 0) ? "w" : "a")) < 0) {
+        /* 
+          Costrutto ternario per aprire il file in modo diverso
+          "w" per il primo figlio, "a" per gli altri
+          "w" sta per "write" (scrittura)
+          "a" sta per "append" (aggiunta), in modo che non sovrascriva il file
+        */
+        perror("open"); 
+        exit(1); 
+      }
 
-    fprintf(fp, "%s", parola);
-    fclose(fp);
-    exit(0);     
+      fprintf(fp, "Figlio %d: %s\n", i + 1, parola);
+      fclose(fp);
+      exit(0);
+    } else { // codice eseguito dal PADRE
+      if (waitpid(-1, &status, 0) < 0) { // attende la terminazione del figlio corrente
+        perror("wait");
+        exit(1);
+      }
+    }
   }
   
-  else {                          // codice eseguito dal PADRE 
-    waitpid(-1, &status, 0);
-    
-    if ((fp = fopen(f1, "r")) < 0) {
-      perror("open");
-      exit(1);
-    }
-
-    fscanf(fp, "%s", parola);
-    printf("Il padre ha letto la stringa: %s\n", parola); 
-    
-    fclose(fp); 
-    return (0);
+  /*
+    Il for è terminato e tutti i figli sono terminati
+    Codice eseguito dal PADRE per leggere e stampare il contenuto del file
+  */
+  if ((fp = fopen(f1, "r")) < 0) {
+    perror("open");
+    exit(1);
   }
+
+  printf("Il padre legge il contenuto del file:\n");
+  while (fgets(parola, sizeof(parola), fp) != NULL) {
+    printf("%s", parola);
+  }
+    
+  fclose(fp); 
+  return (0);
 }
