@@ -64,6 +64,11 @@ int scriviLeggi (char *f1) {
   }
 
   printf("Il padre legge il contenuto del file:\n");
+  /*
+    Ciclo di lettura del file fino a che non si raggiunge la fine e quindi si ottiene NULL
+    fgets legge una riga alla volta e la memorizza in parola
+    Il numero massimo di caratteri della riga è dato da sizeof(parola)
+    */
   while (fgets(parola, sizeof(parola), fp) != NULL) {
     printf("%s", parola);
   }
