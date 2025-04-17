@@ -9,7 +9,6 @@
 
 int main(){ 
   int pid, pid1, pid2, status, x;
-  srand(time(NULL));
   pid1 = fork();
   if(pid1 == 0){            // primo processo figlio  
     printf("1) sono il primo processo figlio con pid: %i \n", getpid());
