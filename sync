@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Questo script serve a sincronizzare il repository scaricando gli aggiornamenti dal corrispondente su sfumature, sul quale vengono effettuate le modifiche."
+
+echo "Pull da sfumature con rebase altrimenti non funziona. Attesa di 3 secondi."
+git pull sfumature main --rebase
+sleep (3)
+
+echo "Pull da origin con rebase altrimenti non funziona. Attesa di 3 secondi."
+git pull origin main --rebase
+sleep (3)
+
+echo "Push su origin"
+git push origin main
