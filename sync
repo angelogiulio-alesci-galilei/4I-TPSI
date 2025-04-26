@@ -1,14 +1,27 @@
 #!/bin/bash
 
-echo "Questo script serve a sincronizzare il repository scaricando gli aggiornamenti dal corrispondente su sfumature, sul quale vengono effettuate le modifiche."
+# Controlla se il codespace è quello di Galilei -> 4I-TPSI
+if [ "$(gh codespace list --json name -q '.[0].name')" = "fuzzy-spoon-7vpvjg4xr6q5hx4rr" ]
+# gh codespace list: Ottiene l'elenco dei codespace disponibili.
+# --json name: Filtra solo i nomi dei codespace.
+# -q '.[0].name': Usa una query JQ per ottenere il nome del primo codespace.
+# fuzzy-spoon-7vpvjg4xr6q5hx4rr è il nome del codespace di Galilei
 
-echo "Pull da sfumature con rebase altrimenti non funziona. Attesa di 3 secondi."
-git pull sfumature main --rebase
-sleep (3)
+    then
+        echo "Il CodeSpace è quello di Galilei."
+        echo "Questo script serve a sincronizzare il repository scaricando gli aggiornamenti dal corrispondente su sfumature, sul quale vengono effettuate le modifiche."
 
-echo "Pull da origin con rebase altrimenti non funziona. Attesa di 3 secondi."
-git pull origin main --rebase
-sleep (3)
+        echo "Pull da sfumature con rebase altrimenti non funziona. Attesa di 3 secondi."
+        git pull sfumature main --rebase
+        sleep 3
 
-echo "Push su origin"
-git push origin main
+        echo "Pull da origin con rebase altrimenti non funziona. Attesa di 3 secondi."
+        git pull origin main --rebase
+        sleep 3
+
+        echo "Push su origin"
+        git push origin main
+        
+    else
+        echo "Il CodeSpace non è quello di Galilei. Non posso sincronizzare il repository."
+fi
