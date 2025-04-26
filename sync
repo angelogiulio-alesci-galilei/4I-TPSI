@@ -13,12 +13,10 @@ if [ "$(gh codespace list --json name -q '.[0].name')" = "fuzzy-spoon-7vpvjg4xr6
 
         echo "Pull da sfumature con rebase altrimenti non funziona. Attesa di 3 secondi."
         git pull sfumature main --rebase
-        #sleep 3
 
         echo
         echo "Pull da origin con rebase altrimenti non funziona. Attesa di 3 secondi."
         git pull origin main --rebase
-        #sleep 3
 
         echo
         echo "Push su origin"
