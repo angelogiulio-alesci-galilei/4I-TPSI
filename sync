@@ -11,15 +11,16 @@ if [ "$(gh codespace list --json name -q '.[0].name')" = "fuzzy-spoon-7vpvjg4xr6
         echo "Il CodeSpace è quello di Galilei."
         echo "Questo script serve a sincronizzare il repository scaricando gli aggiornamenti dal corrispondente su sfumature, sul quale vengono effettuate le modifiche."
 
-        echo "Pull da sfumature con rebase altrimenti non funziona. Attesa di 3 secondi."
+        echo
+        echo "Pull da sfumature con rebase altrimenti non funziona."
         git pull sfumature main --rebase
 
         echo
-        echo "Pull da origin con rebase altrimenti non funziona. Attesa di 3 secondi."
+        echo "Pull da origin con rebase altrimenti non funziona."
         git pull origin main --rebase
 
         echo
-        echo "Push su origin"
+        echo "Push su origin."
         git push origin main
         
     else
