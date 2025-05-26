@@ -6,10 +6,10 @@
 #define MIN_SIG 1
 #define MAX_SIG 127
 
-void stato(int *status);
-void statoOut(int *status);
-void segnale(int *status);
-void segnaleOut(int *status);
+void setVol(int *status);
+void getVol(int *status);
+void setSig(int *status);
+void getSig(int *status);
 
 int main() {
     int scelta, status;
@@ -27,12 +27,12 @@ int main() {
                 printf("Uscita dal programma.\n");
                 break;
             case 1:
-                stato(&status);
-                statoOut(&status);
+                setVol(&status);
+                getVol(&status);
                 break;
             case 2:
-                segnale(&status);
-                segnaleOut(&status);
+                setSig(&status);
+                getSig(&status);
                 break;
             default:
                 printf("Scelta non valida! Riprova.\n");
@@ -43,7 +43,7 @@ int main() {
     return 0;
 }
 
-void stato(int *status) {
+void setVol(int *status) {
     int input;
     do {
         printf("Inserisci un valore (0-255) per lo status volontario: ");
@@ -55,14 +55,14 @@ void stato(int *status) {
     *status = input * 256;
 }
 
-void statoOut(int *status) {
+void getVol(int *status) {
     printf("\nTerminazione volontaria con stato simulata.\n");
     printf("Metodo WEXITSTATUS(status): %d\n", WEXITSTATUS(*status));
     printf("Metodo status/256: %d\n", *status / 256);
     printf("Metodo status >> 8: %d\n", *status >> 8);
 }
 
-void segnale(int *status) {
+void setSig(int *status) {
     int input;
     do {
         printf("Inserisci un segnale (1-127): ");
@@ -74,7 +74,7 @@ void segnale(int *status) {
     *status = input;
 }
 
-void segnaleOut(int *status) {
+void getSig(int *status) {
     printf("\nTerminazione involontaria simulata per segnale.\n");
     printf("Metodo WTERMSIG(status): %d\n", WTERMSIG(*status));
     printf("Metodo status %% 128: %d\n", *status % 128);
