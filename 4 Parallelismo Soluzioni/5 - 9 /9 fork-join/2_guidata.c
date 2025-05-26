@@ -48,7 +48,7 @@ int main() {
   y = WEXITSTATUS(retY);                // prende il risultato del figlio
   printf("-> y = %d \n", y);
   printf("-> y = %d \n", retY>>8);      // shift a destra di 8 bit
-                                        // WEXITSTATUS() restituisce gli 8 bit meno significativi, equivale a retY>>8
+                                        // WEXITSTATUS() restituisce gli 8 bit più significativi, equivale a retY>>8
  
   waitpid(pid2, &retZ, 0);              // join : il padre aspetta il figlio pid2 
   z = WEXITSTATUS(retZ);                // prende il risultato del figlio
