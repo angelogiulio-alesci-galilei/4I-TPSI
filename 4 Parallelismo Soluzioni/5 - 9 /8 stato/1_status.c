@@ -56,7 +56,7 @@ void setVol(int *status) {
 }
 
 void getVol(int *status) {
-    printf("\nTerminazione volontaria con stato simulata.\n");
+    printf("\nTerminazione volontaria con stato (simulata).\n");
     printf("Metodo WEXITSTATUS(status): %d\n", WEXITSTATUS(*status));
     printf("Metodo status/256: %d\n", *status / 256);
     printf("Metodo status >> 8: %d\n", *status >> 8);
@@ -75,7 +75,7 @@ void setSig(int *status) {
 }
 
 void getSig(int *status) {
-    printf("\nTerminazione involontaria simulata per segnale.\n");
+    printf("\nTerminazione involontaria per segnale (simulata).\n");
     printf("Metodo WTERMSIG(status): %d\n", WTERMSIG(*status));
     printf("Metodo status %% 128: %d\n", *status % 128);
 }
